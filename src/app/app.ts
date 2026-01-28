@@ -9,4 +9,21 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('fav-movies');
+
+  protected movies = signal(
+    [
+        'Inception',
+        'The Shawshank Redemption',
+        'The Dark Knight',
+        'Pulp Function',
+        'Spirited Away',
+        'The Godfather'
+    ]
+  );
+
+  protected favourites = signal(
+    []
+  );
+
+  
 }

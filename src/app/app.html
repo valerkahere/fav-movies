@@ -9,7 +9,15 @@
 
 
 <main class="main">
-  
+  <ul>
+  @for (m of movies(); track m;) {
+    <li>
+      {{ m }}
+    </li>
+  }
+  </ul>
+
+  <button type="button">Favourite</button>
 </main>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
